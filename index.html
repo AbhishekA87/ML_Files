@@ -4,85 +4,20 @@
   <meta charset="UTF-8">
   <title>My Data Science Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #34495e;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #34495e; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
     nav a:hover { text-decoration: underline; }
 
-    /* Dropdown menu */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: #fff;
-      min-width: 250px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: #333;
-      padding: 10px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background: #eee;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    /* Project cards */
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    .card h3 {
-      margin: 15px 0 10px;
-    }
-    .card p {
-      font-size: 14px;
-      color: #666;
-    }
+    .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 40px; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; border-radius: 6px; height: 200px; object-fit: cover; }
+    .card h3 { margin: 15px 0 10px; }
+    .card p { font-size: 14px; color: #666; }
+    .card a { display: inline-block; margin-top: 10px; color: #2c3e50; text-decoration: none; font-weight: bold; }
+    .card a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -93,46 +28,37 @@
 
   <nav>
     <a href="#">Home</a>
-    <div class="dropdown">
-      <a href="#">Projects ▼</a>
-      <div class="dropdown-content">
-        <a href="https://github.com/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py">🌍 Global Jobs, GDP, and Sectors Correlation</a>
-        <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb">🚖 Uber Data Analytics</a>
-        <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb">💳 Fraud Detection Analysis</a>
-        <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb">🏦 Credit Risk Scoring</a>
-      </div>
-    </div>
     <a href="https://github.com/AbhishekA87">GitHub</a>
     <a href="mailto:abhishek87@live.in">Contact</a>
   </nav>
 
   <main class="container">
     <div class="card">
-      <img src="https://picsum.photos/400/250?random=1" alt="Global Jobs & GDP">
+      <img src="https://source.unsplash.com/400x250/?data,chart" alt="Global Jobs">
       <h3>Global Jobs & GDP Analysis</h3>
-      <p>Analyzed global employment & economic trends using ML models and visualizations.</p>
-      <a href="https://github.com/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py">View Project →</a>
+      <p>Explored global employment trends, GDP, and sector correlations using ML models and visualizations.</p>
+      <a href="project1.html">View Project →</a>
     </div>
 
     <div class="card">
-      <img src="https://picsum.photos/400/250?random=2" alt="Uber Data Analytics">
+      <img src="https://source.unsplash.com/400x250/?uber,transport" alt="Uber Data">
       <h3>Uber Data Analytics</h3>
-      <p>Performed exploratory analysis on Uber ride data to find patterns & insights.</p>
-      <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb">View Project →</a>
+      <p>Analyzed Uber ride data to identify patterns, peak hours, and geographic demand distribution.</p>
+      <a href="project2.html">View Project →</a>
     </div>
 
     <div class="card">
-      <img src="https://picsum.photos/400/250?random=3" alt="Fraud Detection">
+      <img src="https://source.unsplash.com/400x250/?fraud,money" alt="Fraud Detection">
       <h3>Fraud Detection Analysis</h3>
-      <p>Built ML models to identify fraudulent transactions with classification methods.</p>
-      <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb">View Project →</a>
+      <p>Built ML models to detect fraudulent transactions and visualize financial anomalies.</p>
+      <a href="project3.html">View Project →</a>
     </div>
 
     <div class="card">
-      <img src="https://picsum.photos/400/250?random=4" alt="Credit Risk Scoring">
+      <img src="https://source.unsplash.com/400x250/?credit,finance" alt="Credit Risk">
       <h3>Credit Risk Scoring</h3>
-      <p>Developed risk scoring models to predict creditworthiness of applicants.</p>
-      <a href="https://github.com/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb">View Project →</a>
+      <p>Developed credit scoring models to predict applicants' creditworthiness and risk levels.</p>
+      <a href="project4.html">View Project →</a>
     </div>
   </main>
 </body>
