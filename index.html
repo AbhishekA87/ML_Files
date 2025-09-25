@@ -14,14 +14,12 @@
     nav a:hover { text-decoration: underline; }
 
     .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
     .card:hover { transform: translateY(-5px); }
     .card img { width: 100%; height: 200px; object-fit: cover; display: block; }
     .card-content { padding: 15px; }
     .card-content h3 { margin: 0 0 10px; }
     .card-content p { font-size: 14px; color: #666; margin: 0; }
-    .card-content a { display: inline-block; margin-top: 10px; color: #2c3e50; text-decoration: none; font-weight: bold; }
-    .card-content a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -39,44 +37,40 @@
   <main class="container">
 
     <!-- Project 1 -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1565372910278-4a1c6f1d8dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZWRhfHx8fHx8MTY5NTk5MzQ1OQ&ixlib=rb-4.0.3&q=80&w=400&h=250" alt="Global Jobs">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py" target="_blank">
+      <img src="https://images.unsplash.com/photo-1581093588401-07d02b6c6b38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400&h=250" alt="Global Jobs">
       <div class="card-content">
         <h3>Global Jobs & GDP Analysis</h3>
         <p>Explored global employment trends, GDP, and sector correlations using ML models and visualizations.</p>
-        <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py" target="_blank">Open in Colab →</a>
       </div>
-    </div>
+    </a>
 
     <!-- Project 2 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb" target="_blank">
       <img src="https://images.unsplash.com/photo-1526406915898-205209a1e7c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400&h=250" alt="Uber Data">
       <div class="card-content">
         <h3>Uber Data Analytics</h3>
         <p>Analyzed Uber ride data to identify patterns, peak hours, and geographic demand distribution.</p>
-        <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb" target="_blank">Open in Colab →</a>
       </div>
-    </div>
+    </a>
 
     <!-- Project 3 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb" target="_blank">
       <img src="https://images.unsplash.com/photo-1591696331114-1d4b08035f0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400&h=250" alt="Fraud Detection">
       <div class="card-content">
         <h3>Fraud Detection Analysis</h3>
         <p>Built ML models to detect fraudulent transactions and visualize financial anomalies.</p>
-        <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb" target="_blank">Open in Colab →</a>
       </div>
-    </div>
+    </a>
 
     <!-- Project 4 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb" target="_blank">
       <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400&h=250" alt="Credit Risk">
       <div class="card-content">
         <h3>Credit Risk Scoring</h3>
         <p>Developed credit scoring models to predict applicants' creditworthiness and risk levels.</p>
-        <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb" target="_blank">Open in Colab →</a>
       </div>
-    </div>
+    </a>
 
   </main>
 </body>
