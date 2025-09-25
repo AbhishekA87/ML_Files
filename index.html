@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Machine Learning Portfolio</title>
+  <title>Portfolio - ML / AI / Deep Learning</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
     header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 5px 0 0; font-size: 1.2rem; }
+
     nav { background: #34495e; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
 
     .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.2s; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; cursor: pointer; text-decoration: none; color: inherit; }
     .card:hover { transform: translateY(-5px); }
-    .card img { width: 100%; border-radius: 6px; height: 200px; object-fit: cover; }
-    .card h3 { margin: 15px 0 10px; }
-    .card p { font-size: 14px; color: #666; }
-    .card a { display: inline-block; margin-top: 10px; color: #2c3e50; text-decoration: none; font-weight: bold; }
-    .card a:hover { text-decoration: underline; }
-
+    .card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    .card-content { padding: 15px; }
+    .card-content h3 { margin: 0 0 10px; }
+    .card-content p { font-size: 14px; color: #666; margin: 0; }
     iframe { width: 100%; height: 600px; border: 1px solid #ddd; margin-top: 15px; border-radius: 6px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Portfolio- ML/AI/Deep Learning</h1>
-    <p>Interactive notebooks showcasing models, analyses, and visualizations</p>
+    <h1>Portfolio - ML / AI / Deep Learning</h1>
+    <p>Models, analyses, and visualizations</p>
   </header>
 
   <nav>
@@ -37,40 +38,44 @@
   <main class="container">
 
     <!-- Project 1 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py" target="_blank">
       <img src="https://source.unsplash.com/400x250/?economy,gdp,data" alt="Global Jobs">
-      <h3>Global Jobs & GDP Analysis</h3>
-      <p>Explored global employment trends, GDP, and sector correlations using ML models and visualizations.</p>
-      <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py" target="_blank">Open in Colab →</a>
+      <div class="card-content">
+        <h3>Global Jobs & GDP Analysis</h3>
+        <p>Explored global employment trends, GDP, and sector correlations using ML models and visualizations.</p>
+      </div>
       <iframe src="https://nbviewer.org/github/AbhishekA87/ML_Files/blob/main/global_employment_and_gdp_trends_eda_(1991_2022).py"></iframe>
-    </div>
+    </a>
 
     <!-- Project 2 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb" target="_blank">
       <img src="https://source.unsplash.com/400x250/?taxi,transport,city" alt="Uber Data">
-      <h3>Uber Data Analytics</h3>
-      <p>Analyzed Uber ride data to identify patterns, peak hours, and geographic demand distribution.</p>
-      <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb" target="_blank">Open in Colab →</a>
+      <div class="card-content">
+        <h3>Uber Data Analytics</h3>
+        <p>Analyzed Uber ride data to identify patterns, peak hours, and geographic demand distribution.</p>
+      </div>
       <iframe src="https://nbviewer.org/github/AbhishekA87/ML_Files/blob/main/Uber_Data_Analytics.ipynb"></iframe>
-    </div>
+    </a>
 
     <!-- Project 3 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb" target="_blank">
       <img src="https://source.unsplash.com/400x250/?fraud,finance,money" alt="Fraud Detection">
-      <h3>Fraud Detection Analysis</h3>
-      <p>Built ML models to detect fraudulent transactions and visualize financial anomalies.</p>
-      <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb" target="_blank">Open in Colab →</a>
+      <div class="card-content">
+        <h3>Fraud Detection Analysis</h3>
+        <p>Built ML models to detect fraudulent transactions and visualize financial anomalies.</p>
+      </div>
       <iframe src="https://nbviewer.org/github/AbhishekA87/ML_Files/blob/main/Copy_of_Fraud_Detection_in_Transactions.ipynb"></iframe>
-    </div>
+    </a>
 
     <!-- Project 4 -->
-    <div class="card">
+    <a class="card" href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb" target="_blank">
       <img src="https://source.unsplash.com/400x250/?credit,banking,finance" alt="Credit Risk">
-      <h3>Credit Risk Scoring</h3>
-      <p>Developed credit scoring models to predict applicants' creditworthiness and risk levels.</p>
-      <a href="https://colab.research.google.com/github/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb" target="_blank">Open in Colab →</a>
+      <div class="card-content">
+        <h3>Credit Risk Scoring</h3>
+        <p>Developed credit scoring models to predict applicants' creditworthiness and risk levels.</p>
+      </div>
       <iframe src="https://nbviewer.org/github/AbhishekA87/ML_Files/blob/main/Credit_Risk_scoring.ipynb"></iframe>
-    </div>
+    </a>
 
   </main>
 </body>
